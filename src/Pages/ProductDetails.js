@@ -8,17 +8,17 @@ import Shop from '../Components/Shop'
 export default function ProductDetails() {
     let {productId} = useParams();
     
-    let [product, setProduct] = useState();
+    let [product, setProduct] = useState({});
 
     useEffect(() => {
         axios.get(`https://fakestoreapi.com/products/${productId}`)
             .then(res => {
-                // console.log(res.data);
+                console.log("hello puja", res.data);
                 setProduct(res.data)
             });
     }, [])
-
-
+    console.log("this is", product)
+    
     // JSON.parse(product)
 
     // let parsedData = JSON.parse(product);
@@ -29,8 +29,8 @@ export default function ProductDetails() {
     <>
         <Shop />
         <h2>this is {productId}</h2>
-        <p>{product.title}</p>
-
+        {/* <p>{product.title}</p> */}
+        {/* <img src={product.image} /> */}
         <p></p>
     </>
   )
