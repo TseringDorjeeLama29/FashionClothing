@@ -19,12 +19,6 @@ export default function ProductDetails() {
     }, [])
     console.log("this is", product)
     
-    // JSON.parse(product)
-
-    // let parsedData = JSON.parse(product);
-    // // let data = product.find((item) => item.id == productId );
-    // console.log("hey", product.id)
-    // console.log(parsedData["title"])
   return (
     <>
         <Shop />
