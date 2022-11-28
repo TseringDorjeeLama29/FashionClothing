@@ -23,7 +23,7 @@ export default function ProductDetails() {
     <>
         <Shop />
         <h2>this is {productId}</h2>
-        {/* <p>{product.title}</p> */}
+        <p>{product.title}</p>
         {/* <img src={product.image} /> */}
         <p></p>
     </>
