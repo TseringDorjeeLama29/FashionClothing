@@ -20,6 +20,7 @@ export default function ShopDetails() {
                 setPost(res.data)
             });
     }, [])
+
     let Cat = post.filter((value) => value.category == detailName);
   return (
     <>
@@ -30,7 +31,7 @@ export default function ShopDetails() {
                     {Cat.map((item) => (
                         <div className="col-lg-4 ">
                             <CardGroup className='position-relative product-box'>
-                                <Card className='px-5 product-img'>
+                                <Card className='px-5 product-img py-5'>
                                     <Card.Img variant="top" src={item.image} className="" />
                                 </Card>
                                 <div className="position-absolute end-0 mt-4 ">
@@ -42,7 +43,7 @@ export default function ShopDetails() {
                                     </ListGroup>
                                 </div>
                                 <Card.Body>
-                                    <Card.Title><a href='' className='text-decoration-none text-dark'>{item.title}</a></Card.Title>
+                                    <Card.Title><Link to={`/shopCategoryDetails/${item.id}`} className='text-decoration-none text-dark'>{item.title}</Link></Card.Title>
                                     <Card.Text className='py-2'>
                                         $ {item.price}
                                         <p className='text-warning'><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></p>

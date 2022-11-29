@@ -10,6 +10,7 @@ import ShopDetails from '../Pages/ShopDetails';
 import Product from './Product';
 import ShopCategory from '../Pages/ShopCategory';
 import ProductDetails from '../Pages/ProductDetails';
+import ShopCategoryDetails from '../Pages/ShopCategoryDetails';
 
 
 export default function Navbars() {
@@ -93,6 +94,7 @@ export default function Navbars() {
                 <Route path="/shop" element={<ShopCategory />} />
                 <Route path="/shopDetails/:detailName" element={<ShopDetails />} />
                 <Route path="/productDetails/:productId" element={<ProductDetails />} />
+                <Route path="/shopCategoryDetails/:categoryDetailsId" element={<ShopCategoryDetails />} />
             </Routes>
         </>
     )

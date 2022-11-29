@@ -220,6 +220,10 @@ ul {margin-bottom: 0 !important; padding-left: 0 !important;}
 }
 
 
+a:hover {
+    color: #C17262 !important;
+    transition: .9s;
+}
 
 @media (max-width: 480px) {
     .banner-h2 {
