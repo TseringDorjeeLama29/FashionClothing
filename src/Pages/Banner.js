@@ -1,4 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel'
+import { Link } from 'react-router-dom';
 
 import BannerData from '../Data.js/BannerData';
 
@@ -18,7 +19,7 @@ function Banner() {
               <div >
                 <h2 className='banner-h2'>{value.title}</h2>
                 <p className='py-4 banner-p'>{value.body}</p>
-                <button className='p-2 banner-btn'><a href="" className="btn  btn-lg  ">SHOP NOW</a></button> 
+                <button className='p-2 banner-btn'><Link to={'/shop'} className="btn  btn-lg  ">SHOP NOW</Link></button> 
               </div>           
             </Carousel.Caption>
           </Carousel.Item>

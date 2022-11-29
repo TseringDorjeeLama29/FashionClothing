@@ -8,7 +8,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Shop from './Shop';
 import ShopDetails from '../Pages/ShopDetails';
 import Product from './Product';
-import ShopCategory from './ShopCategory';
+import ShopCategory from '../Pages/ShopCategory';
 import ProductDetails from '../Pages/ProductDetails';
 
 

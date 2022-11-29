@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from '../Components/Banner'
+import Banner from './Banner'
 import Category from '../Components/Category'
 import Product from '../Components/Product'
 import Banner_Mid from './Banner_Mid'

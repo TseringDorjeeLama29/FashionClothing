@@ -5,7 +5,7 @@ import axios from "axios";
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import ListGroup from 'react-bootstrap/ListGroup';
-import Shop from './Shop';
+import Shop from '../Components/Shop';
 
 export default function ShopCategory() {
     let [product, setProduct] = useState([])
@@ -26,7 +26,7 @@ export default function ShopCategory() {
                         <h2 className='text-uppercase mb-3 '>Categories</h2>
                         <ul className="list-group">
                             {CategoryData.map((item) => (
-                                <li className="list-group-item d-flex justify-content-between align-items-center"> <Link to={`/shopDetails/${item.category}`}>{item.category} </Link>                       
+                                <li className="list-group-item d-flex justify-content-between align-items-center"> <Link to={`/shopDetails/${item.category}`} className=" text-decoration-none text-dark">{item.category} </Link>                       
                                 <span className="badge bg-primary rounded-pill">14</span>
                             </li>
                             ))}
@@ -62,7 +62,7 @@ export default function ShopCategory() {
                                     </ListGroup>
                                 </div>
                                 <Card.Body>
-                                    <Card.Title><a href='' className='text-decoration-none text-dark'>{item.title}</a></Card.Title>
+                                    <Card.Title><Link to={`/productDetails/${item.id}`} className='text-decoration-none text-dark'>{item.title}</Link></Card.Title>
                                     <Card.Text className='py-2'>
                                         $ {item.price}
                                         <p className='text-warning'><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></p>
