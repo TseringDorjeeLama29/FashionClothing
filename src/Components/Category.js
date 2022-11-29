@@ -2,6 +2,7 @@ import React from 'react'
 import CatData from '../Data.js/CatData'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { Link } from 'react-router-dom';
 
 export default function Category() {
   return (
@@ -21,7 +22,7 @@ export default function Category() {
                                         <img src={value.image} alt="" className='w-100'/>
                                         <div className="category-desc position-absolute  px-5">
                                         <h3 className='text-light'>{value.title}</h3>
-                                        <p className='py-2 browser-links'><a href="" className='text-light text-decoration-none py-3'>{value.body} <i class="bi bi-arrow-right"></i></a></p>
+                                        <p className='py-2 browser-links'><Link to={'/shop'} className='text-light text-decoration-none py-3'>{value.body} <i class="bi bi-arrow-right"></i></Link></p>
                                         </div>                                     
                                     </div>
                                 </div>
