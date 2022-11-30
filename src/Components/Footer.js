@@ -55,6 +55,18 @@ export default function Footer() {
                 </div>
             </div>
        </div>
+       <div className="container-fluid bg-white p-5">
+            <div className="container">
+                <div className="d-flex justify-content-between">
+                    <div className="footer-left">
+                        <p>Copyright &copy; 2021 <a href="" className='text-dark text-decoration-none fw-semibold'>SNS Theme. </a>All Right Reserved.</p>
+                    </div>
+                    <div className="footer-logo">
+                       <img src={require('../Assets/img/payment.png')} alt="" />
+                    </div>
+                </div>
+            </div>
+       </div>
     </>
   )
 }
