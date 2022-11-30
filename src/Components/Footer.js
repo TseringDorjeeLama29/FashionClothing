@@ -41,14 +41,15 @@ export default function Footer() {
                     </div>
                     <div className="col-lg-5">
                         <div className="row">
-                            <div className="col-lg-10">
                                 <h5>GET IN TOUCH</h5>
                                 <p>Sign up to receive amazing offers & deals</p>
-                                <form action="">
-                                    <input type="text" />
-                                </form>
-                            </div>
-                            <div className="col-lg-2"></div>
+                                  <form>
+                                      <div className="mb-3 d-inline-block">
+                                          <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
+                                          <input type="email" className="form-control d-inline-block" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Enter Your Email' />
+                                      </div>
+                                      <button type="submit" className="btn border-dark mx-4 text-uppercase d-inline-block"><a>Subscribe</a> </button>
+                                  </form>
                         </div>
                     </div>
                 </div>
