@@ -42,14 +42,16 @@ export default function ProductDetails() {
                 <h2>{product.title}</h2>
                 <p><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><Link to="" className="text-decoration-none text-dark mx-2">(1 customer review)</Link></p>
                 <p className='fw-bolder'>$ {product.price}</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde aperiam velit odit consectetur eos quis vero? Quibusdam placeat quasi eum cum temporibus qui repellat error, facilis eveniet dolorum nihil, sapiente accusamus ipsa illo.</p>
-                <div className='fs-4 ms-4 border border-dark d-inline-block py-1 px-3'>{count}</div>
-                <button onClick={incrementCount} className="py-1 px-3 fs-5">+</button>
-                <button onClick={decrementCount} className="py-1 px-3 fs-5">-</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde aperiam velit odit consectetur eos quis vero? Quibusdam placeat quasi eum cum temporibus qui repellat error, facilis eveniet dolorum nihil, sapiente accusamus ipsa illo.</p>            
+            <hr />
+                <ul>
+                  <li>SKU: <a>{product.title}</a></li>
+                  <li>CATEGORIES:<a> {product.category}</a></li>
+                  <li>TAGS:<a> Fashion </a></li>
+                </ul>
               </div>
             </div>
         </div>
-        <p></p>
     </>
   )
 }

@@ -362,3 +362,32 @@ a:hover {
         }
     }
 }
+
+.border-seperator {
+    height: 1px;
+    border-top: 1px solid #ccc;
+    display: block;
+    position: relative;
+    top: 1px;
+    width: 91px;
+}
+
+.social-media {
+    ul {
+        list-style: none;
+        li {
+            display: inline;
+            a {
+                text-decoration: none;
+                padding: 6px;
+                margin: 3px;
+                font-size: 14px;
+                &:hover {
+                    background: #C17262;
+                    color: #fff !important;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
