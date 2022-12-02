@@ -24,7 +24,7 @@ export default function Banner_Mid() {
         {/* <img src={require('../Assets/img/deal-bg.jpg')} alt="" className='w-100'/> */}
       </div>
       <div className="container mt-5">
-        <h2 className='text-uppercase text-center fw-bolder'>From Our blog</h2>
+        <h2 className='text-uppercase text-center fw-bolder py-3 mb-3'>From Our blog</h2>
       <Swiper
                     spaceBetween={50}
                     slidesPerView={3}

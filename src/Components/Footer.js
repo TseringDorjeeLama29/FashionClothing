@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -59,7 +60,7 @@ export default function Footer() {
             <div className="container">
                 <div className="d-flex justify-content-between">
                     <div className="footer-left">
-                        <p>Copyright &copy; 2021 <a href="" className='text-dark text-decoration-none fw-semibold'>SNS Theme. </a>All Right Reserved.</p>
+                        <p>Copyright &copy; 2021 <Link to={'/#'} className='text-dark text-decoration-none fw-semibold'>SNS Theme. </Link>All Right Reserved.</p>
                     </div>
                     <div className="footer-logo">
                        <img src={require('../Assets/img/payment.png')} alt="" />

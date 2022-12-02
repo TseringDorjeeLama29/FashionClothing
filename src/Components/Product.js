@@ -64,7 +64,7 @@ export default function Product() {
 
                 </div>
                 <div className="browser-link text-center mb-5">
-                    <Link className='text-dark text-decoration-none fw-bolder'>VIEW ALL PRODUCTS</Link>
+                    <Link to={'/shop'} className='text-dark text-decoration-none fw-bolder'>VIEW ALL PRODUCTS</Link>
                 </div>
             </div>
              <div className="container-fluid">
