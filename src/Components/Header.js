@@ -8,8 +8,8 @@ export default function Header() {
                 <div className="row ">
                     <div className="col-lg-6 text-center text-lg-start">
                         <ul>
-                            <li><a href="mailto:">HELLO@DOMAIN.COM</a></li>
-                            <li className='border-end border-start'><a href="tel:+">(+012) 3456 789</a></li>
+                            <li><a href="mailto:fashion@domain.com">FASHION@DOMAIN.COM</a></li>
+                            <li className='border-end border-start'><a href="tel:+ 9828057063">(+012) 3456 789</a></li>
                             <li className='top-font px-2'>MON - FRI & 08H30 - 17H30</li>
                         </ul>
                     </div>

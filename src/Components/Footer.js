@@ -12,20 +12,20 @@ export default function Footer() {
                             <div className="col-lg-6 footer-info">
                                 <h5>STORE INFO</h5>
                                 <ul className=''>
-                                    <li className='list-unstyled '><Link to="https://goo.gl/maps/Ks1if5mpdYdYuKPS8" className='text-decoration-none text-dark'><span className='text-dark'><i className="bi bi-house-door-fill me-2"></i></span>Boudha-6, kathmandu</Link></li>
-                                    <li className='list-unstyled '><Link to="tel:+977 9828057063" className='text-decoration-none text-dark'><span className='text-dark'><i className="bi bi-telephone-fill me-2"></i></span>(+012) 3456 789</Link></li>
-                                    <li className='list-unstyled '><Link to="" className='text-decoration-none text-dark'><span className='text-dark fw-bold me-2'>@</span> hello@domain.com</Link></li>
-                                    <li className='list-unstyled '><Link to="" className='text-decoration-none text-dark'></Link></li>
+                                    <li className='list-unstyled '><a href="https://goo.gl/maps/Ks1if5mpdYdYuKPS8" className='text-decoration-none text-dark'><span className='text-dark'><i className="bi bi-house-door-fill me-2"></i></span>Boudha-6, kathmandu</a></li>
+                                    <li className='list-unstyled '><a href="tel:+977 9828057063" className='text-decoration-none text-dark'><span className='text-dark'><i className="bi bi-telephone-fill me-2"></i></span>(+012) 3456 789</a></li>
+                                    <li className='list-unstyled '><a href="mailto:fashion@domain.com" className='text-decoration-none text-dark'><span className='text-dark fw-bold me-2'>@</span> hello@domain.com</a></li>
+                                    <li className='list-unstyled '><Link href="" className='text-decoration-none text-dark'></Link></li>
                                 </ul>
                                 <span className='border-seperator my-4'></span>
                                 <div className="social-media">
                                     <ul>
                                         <li className='fw-semibold'>Socials :</li>
-                                        <li><Link to="https://www.facebook.com/"><i className="bi bi-facebook"></i></Link></li>
-                                        <li><Link to="https://www.twitter.com/"><i className="bi bi-twitter"></i></Link></li>
-                                        <li><Link to="https://www.youtube.com/"><i className="bi bi-youtube text-danger"></i></Link></li>
-                                        <li><Link to="https://www.pinterest.com/"><i className="bi bi-pinterest text-danger"></i></Link></li>
-                                        <li><Link to="https://www.instagram.com/"><i className="bi bi-instagram text-danger"></i></Link></li>
+                                        <li><a href="https://www.facebook.com/"><i className="bi bi-facebook"></i></a></li>
+                                        <li><a href="https://www.twitter.com/"><i className="bi bi-twitter"></i></a></li>
+                                        <li><a href="https://www.youtube.com/"><i className="bi bi-youtube text-danger"></i></a></li>
+                                        <li><a href="https://www.pinterest.com/"><i className="bi bi-pinterest text-danger"></i></a></li>
+                                        <li><a href="https://www.instagram.com/"><i className="bi bi-instagram text-danger"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
