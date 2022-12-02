@@ -11,6 +11,8 @@ import Product from './Product';
 import ShopCategory from '../Pages/ShopCategory';
 import ProductDetails from '../Pages/ProductDetails';
 import ShopCategoryDetails from '../Pages/ShopCategoryDetails';
+import TrackOrder from '../Pages/TrackOrder';
+import PrivacyPolicy from '../Pages/PrivacyPolicy';
 
 
 export default function Navbars() {
@@ -95,6 +97,8 @@ export default function Navbars() {
                 <Route path="/shopDetails/:detailName" element={<ShopDetails />} />
                 <Route path="/productDetails/:productId" element={<ProductDetails />} />
                 <Route path="/shopCategoryDetails/:categoryDetailsId" element={<ShopCategoryDetails />} />
+                <Route path='/track' element={<TrackOrder />} />
+                <Route path='/privacy' element={<PrivacyPolicy />} />
             </Routes>
         </>
     )
