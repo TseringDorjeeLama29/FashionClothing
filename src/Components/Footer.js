@@ -60,7 +60,7 @@ export default function Footer() {
                                           <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
                                           <input type="email" className="form-control d-inline-block" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Enter Your Email' />
                                       </div>
-                                      <button type="submit" className="btn border-dark mx-4 text-uppercase d-inline-block"><Link>Subscribe</Link> </button>
+                                      <button type="submit" className="btn border-dark mx-4 text-uppercase d-inline-block"><Link className='text-decoration-none text-dark'>Subscribe</Link> </button>
                                   </form>
                         </div>
                     </div>
