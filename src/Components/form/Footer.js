@@ -74,7 +74,7 @@ export default function Footer() {
                         <p>Copyright &copy; 2021 <Link to={'/#'} className='text-dark text-decoration-none fw-semibold'>SNS Theme. </Link>All Right Reserved.</p>
                     </div>
                     <div className="footer-logo">
-                       <img src={require('../Assets/img/payment.png')} alt="" />
+                       <img src={require('../../Assets/img/payment.png')} alt="" />
                     </div>
                 </div>
             </div>
