@@ -9,10 +9,10 @@ import Shop from './Shop';
 import ShopDetails from '../Pages/ShopDetails';
 import Product from './Product';
 import ShopCategory from '../Pages/ShopCategory';
-import ProductDetails from '../Pages/ProductDetails';
-import ShopCategoryDetails from '../Pages/ShopCategoryDetails';
-import TrackOrder from '../Pages/TrackOrder';
-import PrivacyPolicy from '../Pages/PrivacyPolicy';
+import ProductDetails from '../Pages/Details/ProductDetails';
+import ShopCategoryDetails from '../Pages/Details/ShopCategoryDetails';
+import TrackOrder from '../Pages/Formpages/TrackOrder';
+import PrivacyPolicy from '../Pages/Formpages/PrivacyPolicy';
 
 
 export default function Navbars() {

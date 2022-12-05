@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import CategoryData from '../Data.js/CategoryData';
+import CategoryData from '../../Data.js/CategoryData';
 
 export default function ShopCategoryDetails() {
     let {categoryDetailsId}  = useParams();

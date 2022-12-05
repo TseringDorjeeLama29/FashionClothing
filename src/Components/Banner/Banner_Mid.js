@@ -6,7 +6,7 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Link } from 'react-router-dom';
 import axios from "axios";
-import Sponsor from '../Data.js/Sponsor';
+import Sponsor from '../../Data.js/Sponsor';
 
 export default function Banner_Mid() {
   let [product, setProduct] = useState([])

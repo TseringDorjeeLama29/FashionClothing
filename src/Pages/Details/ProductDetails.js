@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import Shop from '../Components/Shop'
+import Shop from '../../Components/Shop'
 
 
 export default function ProductDetails() {
