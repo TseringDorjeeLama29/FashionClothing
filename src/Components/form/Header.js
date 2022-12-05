@@ -18,7 +18,7 @@ export default function Header() {
                         <ul>
                             <li><Link to={"/track"}>TRACK MY ORDER</Link></li>
                             <li className='border-end border-start'><Link to={"/privacy"}>TERM OF USE</Link></li>
-                            <li><Link to={""}>OUR LOCATION</Link></li>
+                            <li><a href='https://goo.gl/maps/pp3rR7kthXBMzeGm6'>OUR LOCATION</a></li>
                         </ul>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import ShopData from '../Data.js/ShopData'
+import ShopData from '../../Data.js/ShopData'
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import ShopCategory from '../Pages/ShopCategory';
+import ShopCategory from '../Banner/content/ShopCategory';
 
 export default function Shop() {
   return (

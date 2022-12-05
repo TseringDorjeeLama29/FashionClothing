@@ -1,5 +1,6 @@
 import React from 'react'
-import Shop from '../../Components/Shop';
+import Categories from '../../Components/ui/Categories';
+import Shop from '../../Components/ui/Shop';
 
 export default function PrivacyPolicy() {
   return (
@@ -7,7 +8,7 @@ export default function PrivacyPolicy() {
       <Shop />
       <div className="container my-5">
         <div className="row py-4">
-          <div className="col-lg-8">
+          <div className="col-lg-8 pe-5">
             <h2>Who we are</h2>
             <p>Our website address is: http://demo.snstheme.com/wp/manh.</p>
             <h2>What personal data we collect and why we collect it</h2>
@@ -32,12 +33,21 @@ export default function PrivacyPolicy() {
             <h2>Where we send your data</h2>
             <p>Visitor comments may be checked through an automated spam detection service.</p>
           </div>
-          <div className="col-lg-4">
-          <label htmlFor="inputPassword5" className="form-label">Password</label>
-            <input type="text" id="inputPassword5" className="form-control" aria-describedby="passwordHelpBlock" />
-            <div id="passwordHelpBlock" className="form-text">
+          <div className="col-lg-4 ps-3">
+            <div className="position-relative">
+              <label htmlFor="inputPassword5" className="form-label text-uppercase fw-bolder fs-3">Search</label>
+              <input type="text" id="inputPassword5" className="form-control " aria-describedby="passwordHelpBlock" placeholder='search ...' />
+              <div className="position-absolute end-0 bottom-0">
+              <a href=""><i className="bi bi-search fs-5 fw-bold text-dark"></i></a>
+                </div>
+              <div id="passwordHelpBlock" className="form-text">
+              </div>
+         
               
             </div>
+            <hr className='my-5'/>
+            <Categories />
+            <hr className='my-5'/>
           </div>
         </div>
       </div>

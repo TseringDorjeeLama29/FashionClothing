@@ -1,5 +1,5 @@
 import React from 'react'
-import CatData from '../Data.js/CatData'
+import CatData from '../../Data.js/CatData'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Link } from 'react-router-dom';
