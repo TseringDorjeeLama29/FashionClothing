@@ -13,6 +13,7 @@ import ProductDetails from '../Pages/Details/ProductDetails';
 import ShopCategoryDetails from '../Pages/Details/ShopCategoryDetails';
 import TrackOrder from '../Pages/Formpages/TrackOrder';
 import PrivacyPolicy from '../Pages/Formpages/PrivacyPolicy';
+import Contact from '../Pages/Details/Contact';
 
 
 export default function Navbars() {
@@ -25,60 +26,56 @@ export default function Navbars() {
                             <Link to="/"><img src={require('../Assets/img/logo.png')} alt="logo" className='w-50 img-fluid' /></Link>
                         </div>
                         <div className="col-lg-6 text-uppercase">
-                            <Navbar bg="light" expand="lg">
-                                <Container>
-                                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                                    <Navbar.Collapse id="basic-navbar-nav">
-                                        <Nav className="me-auto nav-hover">
-                                            <NavDropdown title="Home" id="basic-nav-dropdown">
-                                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.2">
-                                                    Another action
-                                                </NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                                <NavDropdown.Divider />
-                                                <NavDropdown.Item href="#action/3.4">
-                                                    Separated link
-                                                </NavDropdown.Item>
-                                            </NavDropdown>
-                                            <NavDropdown as={Link} to={"/shop"} title="Shop" id="basic-nav-dropdown">
-                                               <Link><NavDropdown.Item as={Link} to={"/shop"}>Action</NavDropdown.Item></Link> 
-                                                <NavDropdown.Item href="#action/3.2">
-                                                    Another action
-                                                </NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                                <NavDropdown.Divider />
-                                                <NavDropdown.Item href="#action/3.4">
-                                                    Separated link
-                                                </NavDropdown.Item>
-                                            </NavDropdown>
-                                            <NavDropdown title="Blog" id="basic-nav-dropdown">
-                                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.2">
-                                                    Another action
-                                                </NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                                <NavDropdown.Divider />
-                                                <NavDropdown.Item href="#action/3.4">
-                                                    Separated link
-                                                </NavDropdown.Item>
-                                            </NavDropdown>
-                                            <NavDropdown title="Pages" id="basic-nav-dropdown">
-                                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.2">
-                                                    Another action
-                                                </NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                                <NavDropdown.Divider />
-                                                <NavDropdown.Item href="#action/3.4">
-                                                    Separated link
-                                                </NavDropdown.Item>
-                                            </NavDropdown>
-                                            <Nav.Link as={Link} to={"/contact"}>Contact</Nav.Link>
-                                        </Nav>
-                                    </Navbar.Collapse>
-                                </Container>
-                            </Navbar>
+                        <nav className="navbar navbar-expand-lg bg-light ">
+                                <div className="container-fluid">    
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>              
+                                    <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                                        <ul className="navbar-nav">
+                                            <li className="nav-item dropdown me-4">
+                                                <Link className="nav-link dropdown-toggle text-dark fw-semibold" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Home
+                                                </Link>
+                                                <ul className="dropdown-menu">
+                                                    <li><Link className="dropdown-item" to="#">Action</Link></li>
+                                                    <li><Link className="dropdown-item" to="#">Another action</Link></li>
+                                                    <li><Link className="dropdown-item" to="#">Something else here</Link></li>
+                                                </ul>
+                                            </li>
+                                            <li className="nav-item dropdown me-4">
+                                                <Link className="nav-link dropdown-toggle text-dark fw-semibold" to={"/shop"} role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Shop
+                                                </Link>
+                                                <ul className="dropdown-menu">
+                                                    <li><Link className="dropdown-item" to={"/shop"}>Action</Link></li>
+                                                    <li><Link className="dropdown-item" to="#">Another action</Link></li>
+                                                    <li><Link className="dropdown-item" to="#">Something else here</Link></li>
+                                                </ul>
+                                            </li>
+                                            <li className="nav-item dropdown me-4">
+                                                <Link className="nav-link dropdown-toggle text-dark fw-semibold" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Blog
+                                                </Link>
+                                                <ul className="dropdown-menu">
+                                                    <li><Link className="dropdown-item" to="#">Action</Link></li>
+                                                    <li><Link className="dropdown-item" to="#">Another action</Link></li>
+                                                    <li><Link className="dropdown-item" to="#">Something else here</Link></li>
+                                                </ul>
+                                            </li>
+                                            <li className="nav-item dropdown me-4">
+                                                <Link className="nav-link dropdown-toggle text-dark fw-semibold" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Pages
+                                                </Link>
+                                                <ul className="dropdown-menu">
+                                                    <li><Link className="dropdown-item" to="#">Action</Link></li>
+                                                    <li><Link className="dropdown-item" to="#">Another action</Link></li>
+                                                    <li><Link className="dropdown-item" to="#">Something else here</Link></li>
+                                                </ul>
+                                            </li>
+                                            <li><Link className="nav-link active me-4 fw-semibold" aria-current="page" to={"/contact"}>Contact</Link></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
                         </div>
                         <div className="col-lg-3 nav-right text-end ">
                             <ul>
@@ -99,6 +96,7 @@ export default function Navbars() {
                 <Route path="/shopCategoryDetails/:categoryDetailsId" element={<ShopCategoryDetails />} />
                 <Route path='/track' element={<TrackOrder />} />
                 <Route path='/privacy' element={<PrivacyPolicy />} />
+                <Route path='/contact' element={<Contact />} />
             </Routes>
         </>
     )
