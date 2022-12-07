@@ -37,6 +37,7 @@ export default function Navbars() {
                                                 </Link>
                                                 <ul className="dropdown-menu">
                                                     <li><Link className="dropdown-item" to="#">Action</Link></li>
+                                                    <li><hr class="dropdown-divider" /></li>
                                                     <li><Link className="dropdown-item" to="#">Another action</Link></li>
                                                     <li><Link className="dropdown-item" to="#">Something else here</Link></li>
                                                 </ul>

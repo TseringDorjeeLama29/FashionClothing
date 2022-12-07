@@ -16,7 +16,7 @@ export default function ShopDetails() {
         // console.log("hello detailid", detailName)
         axios.get(`https://fakestoreapi.com/products/category/${detailName}`)
             .then(res => {
-                console.log(res.data);
+                // console.log(res.data);
                 setPost(res.data)
             });
     }, [])

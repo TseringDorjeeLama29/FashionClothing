@@ -6,25 +6,22 @@ import CategoryData from '../../Data.js/CategoryData';
 export default function ShopCategoryDetails() {
     let {categoryDetailsId}  = useParams();
 
-    let [category, setCategory] = useState([])
+    let [category, setCategory] = useState({})
 
     useEffect(() => {
-        axios.get(`https://fakestoreapi.com/products/category/`)
+        axios.get(`https://fakestoreapi.com/products/${categoryDetailsId}`)
             .then(res => {
-                console.log(res.data);
-    
+                console.log("this is ", res.data);
                 setCategory(res.data)
             });
     }, [])
-    // console.log("this is tsering ", category)
-    // let cat = category.filter((value) => value.id == categoryDetailsId)
-    // console.log("this is ", category.title)
-    // console.log("her is ", cat.title)
+
+     
   return (
     <>
         <p>This is {categoryDetailsId}</p>
-        {/* <p>This is {detailName}</p> */}
-        {/* <p>{cat.title}</p> */}
+        <h2>{category.title}</h2>
+        <img src={category.image} className="w-100" />
         
     </>
   )
