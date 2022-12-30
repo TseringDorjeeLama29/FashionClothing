@@ -70,6 +70,21 @@ ul {margin-bottom: 0 !important; padding-left: 0 !important;}
     top: -15px;
   }
 
+  .warning {
+    height: 40px;
+    width: 300px;
+    position: fixed;
+    right: 0;
+    top: 8%;
+    background-color: red;
+    font-size: 1.1rem;
+    color: white;
+    font-family: cursive;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 555;
+  }
+
 .banner-position {
     top: 35%;
     left: 8%;

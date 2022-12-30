@@ -20,18 +20,34 @@ import Cart from './Cart';
 export default function Navbars() {
     const [cart, setCart] = useState([]);
 
+    const [warning, setWarning] = useState(false);
+
     const handleClick = (item) => {
-        let isPresent = false;
-        cart.forEach((value) => {
-            if (item.id === value.id)
-            isPresent = true;
-          })
-          if (isPresent)
-            return;
-            setCart([...cart, item])
+      let isPresent = false;
+      cart.forEach((product) => {
+        if (item.id === product.id)
+        isPresent = true;
+      })
+      if (isPresent) {
+        setWarning(true);
+        setTimeout(() => {
+          setWarning(false);
+        }, 2000)
+        return;
+      }
+        setCart([...cart, item]);
     }
 
-    // let size = cart.length;
+    const handleChange = (item, d) => {
+        const ind = cart.indexOf(item);
+        const arr = cart;
+        arr[ind].amount += d;
+    
+        if (arr[ind].amount === 0) arr[ind].amount = 1;
+        setCart([...arr]);
+      };
+
+    let size = cart.length;
     return (
         <>
             <div className="bg-light py-4">
@@ -98,7 +114,7 @@ export default function Navbars() {
                                 <li><a href=""><i class="fas fa-search"></i></a></li>
                                 <li><a href=""><i class="fa-solid fa-user"></i></a></li>
                                 <li className='position-relative cart'><a href="" className='cart-1'><i class="fa-solid fa-heart "></i><span>0</span></a></li>
-                                <li className='position-relative cart'><Link to={"/cart"} className='cart-2'><i class="fa-solid fa-cart-shopping"></i><span>{cart.length}</span></Link></li>
+                                <li className='position-relative cart'><Link to={"/cart"} className='cart-2'><i class="fa-solid fa-cart-shopping"></i><span>{size}</span></Link></li>
                             </ul>
                         </div>
                     </div>
@@ -113,8 +129,11 @@ export default function Navbars() {
                 <Route path='/track' element={<TrackOrder />} />
                 <Route path='/privacy' element={<PrivacyPolicy />} />
                 <Route path='/contact' element={<Contact />} />
-                <Route path='/cart' element={<Cart />} />
+                <Route path='/cart' element={<Cart cart={cart} setCart = {setCart} handleChange = {handleChange}  />} />
             </Routes>
+            {
+        warning && <div className='warning'>Item is already added to your cart</div>
+      }
         </>
     )
 }
