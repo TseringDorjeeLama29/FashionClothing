@@ -9,13 +9,13 @@ import { Link } from 'react-router-dom';
 
 
 
-export default function Product() {
+export default function Product({handleClick}) {
     let [product, setProduct] = useState([])
 
     useEffect(() => {
         axios.get('https://fakestoreapi.com/products')
             .then(res => {
-                console.log(res.data);
+                // console.log(res.data);
                 setProduct(res.data)
             });
     })
@@ -38,8 +38,8 @@ export default function Product() {
                 </Tabs>
                 <div className="row">
                     {product.slice(0, 8).map((item) => (
-                        <div className="col-lg-3 ">
-                            <CardGroup className='position-relative product-box'>
+                        <div  className="col-lg-3 ">
+                            <CardGroup key={item.id} className='position-relative product-box'>
                                 <Card className='px-5 product-img'>
                                     <Card.Img variant="top" src={item.image} className="" />
                                 </Card>
@@ -48,7 +48,7 @@ export default function Product() {
                                         <ListGroup.Item className='border border-0 bg-transparent product-icon-main' ><Link className='text-dark'><i class="bi bi-heart-fill"></i></Link></ListGroup.Item>                                        
                                         <ListGroup.Item className='border border-0 bg-transparent product-icon ' ><Link className='text-dark'><i class="bi bi-stack"></i></Link></ListGroup.Item>                                        
                                         <ListGroup.Item className='border border-0 bg-transparent product-icon' ><Link className='text-dark'><i class="bi bi-eye-fill"></i></Link></ListGroup.Item>                                        
-                                        <ListGroup.Item className='border border-0 bg-transparent product-icon' ><Link className='text-dark'><i class="bi bi-cart-fill"></i></Link></ListGroup.Item>                                                                           
+                                        <ListGroup.Item className='border border-0 bg-transparent product-icon' onClick={() => handleClick(item)} ><Link className='text-dark'><i class="bi bi-cart-fill"></i></Link></ListGroup.Item>                                                                           
                                     </ListGroup>
                                 </div>
                                 <Card.Body>

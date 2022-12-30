@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Routes, Route, Link } from "react-router-dom";
 import Home from '../Pages/home/Home';
 import Container from 'react-bootstrap/Container';
@@ -18,6 +18,20 @@ import Cart from './Cart';
 
 
 export default function Navbars() {
+    const [cart, setCart] = useState([]);
+
+    const handleClick = (item) => {
+        let isPresent = false;
+        cart.forEach((value) => {
+            if (item.id === value.id)
+            isPresent = true;
+          })
+          if (isPresent)
+            return;
+            setCart([...cart, item])
+    }
+
+    // let size = cart.length;
     return (
         <>
             <div className="bg-light py-4">
@@ -83,15 +97,15 @@ export default function Navbars() {
                             <ul>
                                 <li><a href=""><i class="fas fa-search"></i></a></li>
                                 <li><a href=""><i class="fa-solid fa-user"></i></a></li>
-                                <li className='position-relative'><a href="" className='cart-1'><i class="fa-solid fa-heart "></i></a></li>
-                                <li className='position-relative'><Link to={"/cart"} className='cart-2'><i class="fa-solid fa-cart-shopping"></i></Link></li>
+                                <li className='position-relative cart'><a href="" className='cart-1'><i class="fa-solid fa-heart "></i><span>0</span></a></li>
+                                <li className='position-relative cart'><Link to={"/cart"} className='cart-2'><i class="fa-solid fa-cart-shopping"></i><span>{cart.length}</span></Link></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Home handleClick = {handleClick} />} />
                 <Route path="/shop" element={<ShopCategory />} />
                 <Route path="/shopDetails/:detailName" element={<ShopDetails />} />
                 <Route path="/productDetails/:productId" element={<ProductDetails />} />

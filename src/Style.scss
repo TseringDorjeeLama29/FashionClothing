@@ -60,17 +60,15 @@ ul {margin-bottom: 0 !important; padding-left: 0 !important;}
     }
 }
 
-.cart-1::before, .cart-2::before {
-    content: '0';
-    color: #fff;
-    background: #C17262;
-    border-radius: 50%;
-    padding: 0px 6px;
-    font-size: 12px;
-    position: absolute;
-    top: -17px;
-    left: 0;
-}
+.cart span {
+    padding: 0 5px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    position: relative;
+    top: -15px;
+  }
 
 .banner-position {
     top: 35%;

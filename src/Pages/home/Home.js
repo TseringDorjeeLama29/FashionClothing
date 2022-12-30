@@ -4,12 +4,12 @@ import Category from '../../Components/Banner/Category'
 import Product from '../../Components/Banner/Product'
 import Banner_Mid from '../../Components/Banner/Banner_Mid'
 
-export default function Home() {
+export default function Home({handleClick}) {
   return (
     <>
         <Banner />
         <Category />      
-        <Product /> 
+        <Product  handleClick = {handleClick} /> 
         <Banner_Mid />
     </>
   )
