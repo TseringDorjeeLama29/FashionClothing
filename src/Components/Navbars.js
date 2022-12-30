@@ -14,7 +14,7 @@ import ShopCategoryDetails from '../Pages/Details/ShopCategoryDetails';
 import TrackOrder from '../Pages/Formpages/TrackOrder';
 import PrivacyPolicy from '../Pages/Formpages/PrivacyPolicy';
 import Contact from '../Pages/Details/Contact';
-import Cart from './Cart';
+import Cart from './ui/Cart';
 
 
 export default function Navbars() {

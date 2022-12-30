@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../Style/cart.css"
+import "../../Style/cart.css"
 
 export default function Cart({cart, setCart, handleChange}) {
     const [price, setPrice] = useState(0);
