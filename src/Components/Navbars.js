@@ -14,6 +14,7 @@ import ShopCategoryDetails from '../Pages/Details/ShopCategoryDetails';
 import TrackOrder from '../Pages/Formpages/TrackOrder';
 import PrivacyPolicy from '../Pages/Formpages/PrivacyPolicy';
 import Contact from '../Pages/Details/Contact';
+import Cart from './Cart';
 
 
 export default function Navbars() {
@@ -83,7 +84,7 @@ export default function Navbars() {
                                 <li><a href=""><i class="fas fa-search"></i></a></li>
                                 <li><a href=""><i class="fa-solid fa-user"></i></a></li>
                                 <li className='position-relative'><a href="" className='cart-1'><i class="fa-solid fa-heart "></i></a></li>
-                                <li className='position-relative'><a href="" className='cart-2'><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li className='position-relative'><Link to={"/cart"} className='cart-2'><i class="fa-solid fa-cart-shopping"></i></Link></li>
                             </ul>
                         </div>
                     </div>
@@ -98,6 +99,7 @@ export default function Navbars() {
                 <Route path='/track' element={<TrackOrder />} />
                 <Route path='/privacy' element={<PrivacyPolicy />} />
                 <Route path='/contact' element={<Contact />} />
+                <Route path='/cart' element={<Cart />} />
             </Routes>
         </>
     )

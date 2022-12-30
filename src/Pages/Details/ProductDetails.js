@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import Button from '../../Components/ui/Button';
 import Shop from '../../Components/ui/Shop'
 
 
@@ -22,7 +23,7 @@ export default function ProductDetails() {
     useEffect(() => {
         axios.get(`https://fakestoreapi.com/products/${productId}`)
             .then(res => {
-                console.log("hello puja", res.data);
+                // console.log("hello puja", res.data);
                 setProduct(res.data)
             });
     })
@@ -43,6 +44,7 @@ export default function ProductDetails() {
                 <p><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><Link to="" className="text-decoration-none text-dark mx-2">(1 customer review)</Link></p>
                 <p className='fw-bolder'>$ {product.price}</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde aperiam velit odit consectetur eos quis vero? Quibusdam placeat quasi eum cum temporibus qui repellat error, facilis eveniet dolorum nihil, sapiente accusamus ipsa illo.</p>            
+                <Button />
             <hr />
                 <ul>
                   <li>SKU: <a>{product.title}</a></li>
