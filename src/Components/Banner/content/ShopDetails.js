@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import ListGroup from 'react-bootstrap/ListGroup';
 
-export default function ShopDetails() {
+export default function ShopDetails({handleClick}) {
     let {detailName} = useParams()
 
     let [post, setPost] = useState([])
@@ -39,7 +39,7 @@ export default function ShopDetails() {
                                         <ListGroup.Item className='border border-0 bg-transparent product-icon-main' ><Link className='text-dark'><i class="bi bi-heart-fill"></i></Link></ListGroup.Item>                                        
                                         <ListGroup.Item className='border border-0 bg-transparent product-icon ' ><Link className='text-dark'><i class="bi bi-stack"></i></Link></ListGroup.Item>                                        
                                         <ListGroup.Item className='border border-0 bg-transparent product-icon' ><Link className='text-dark'><i class="bi bi-eye-fill"></i></Link></ListGroup.Item>                                        
-                                        <ListGroup.Item className='border border-0 bg-transparent product-icon' ><Link className='text-dark'><i class="bi bi-cart-fill"></i></Link></ListGroup.Item>                                                                           
+                                        <ListGroup.Item className='border border-0 bg-transparent product-icon' ><Link className='text-dark' onClick={() => handleClick(item)}><i class="bi bi-cart-fill"></i></Link></ListGroup.Item>                                                                           
                                     </ListGroup>
                                 </div>
                                 <Card.Body>

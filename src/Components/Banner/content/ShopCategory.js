@@ -7,7 +7,7 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Shop from '../../ui/Shop';
 
-export default function ShopCategory() {
+export default function ShopCategory({handleClick}) {
     let [product, setProduct] = useState([])
 
     useEffect(() => {
@@ -40,14 +40,14 @@ export default function ShopCategory() {
                                 <h5 className='mb-0'>Show</h5>
                             </div>
                             <div className="col-lg-6">
-                                <Link><p className='text-end mb-0'>default settings</p></Link>
+                                <Link className='text-decoration-none text-dark'><p className='text-end mb-0'>default settings</p></Link>
 
                             </div>
                         </div>
                         <hr/>
                         </div>
                         <div className="row my-5">
-                    {product.slice(0, 8).map((item) => (
+                    {product.slice(0, 6).map((item) => (
                         <div className="col-lg-4">
                             <CardGroup className='position-relative product-box'>
                                 <Card className='px-5 product-img'>
@@ -58,7 +58,7 @@ export default function ShopCategory() {
                                         <ListGroup.Item className='border border-0 bg-transparent product-icon-main' ><Link className='text-dark'><i class="bi bi-heart-fill"></i></Link></ListGroup.Item>                                        
                                         <ListGroup.Item className='border border-0 bg-transparent product-icon ' ><Link className='text-dark'><i class="bi bi-stack"></i></Link></ListGroup.Item>                                        
                                         <ListGroup.Item className='border border-0 bg-transparent product-icon' ><Link className='text-dark'><i class="bi bi-eye-fill"></i></Link></ListGroup.Item>                                        
-                                        <ListGroup.Item className='border border-0 bg-transparent product-icon' ><Link className='text-dark'><i class="bi bi-cart-fill"></i></Link></ListGroup.Item>                                                                           
+                                        <ListGroup.Item className='border border-0 bg-transparent product-icon' ><Link className='text-dark' onClick={() => handleClick(item)}><i class="bi bi-cart-fill"></i></Link></ListGroup.Item>                                                                           
                                     </ListGroup>
                                 </div>
                                 <Card.Body>

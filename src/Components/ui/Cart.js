@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../../Style/cart.css"
 
 export default function Cart({cart, setCart, handleChange}) {
@@ -47,6 +48,7 @@ export default function Cart({cart, setCart, handleChange}) {
             <span>Total Price of your Cart</span>
             <span>Rs - {price}</span>
             </div>
+            <Link to={"/shop"} className="btn btn-danger my-4 p-2 ">Return to the shop</Link>
        </article>
     </>
   )

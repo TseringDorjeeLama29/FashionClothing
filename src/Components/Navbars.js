@@ -122,8 +122,8 @@ export default function Navbars() {
             </div>
             <Routes>
                 <Route path="/" element={<Home handleClick = {handleClick} />} />
-                <Route path="/shop" element={<ShopCategory />} />
-                <Route path="/shopDetails/:detailName" element={<ShopDetails />} />
+                <Route path="/shop" element={<ShopCategory handleClick = {handleClick} />} />
+                <Route path="/shopDetails/:detailName" element={<ShopDetails handleClick = {handleClick} />} />
                 <Route path="/productDetails/:productId" element={<ProductDetails />} />
                 <Route path="/shopCategoryDetails/:categoryDetailsId" element={<ShopCategoryDetails />} />
                 <Route path='/track' element={<TrackOrder />} />
