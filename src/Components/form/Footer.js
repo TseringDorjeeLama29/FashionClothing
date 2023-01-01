@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Form from '../ui/Form'
 
 export default function Footer() {
+    const getData = (data) => {
+        console.log("coming from tsering lama", data)
+    }
   return (
     <>
        <div className="container-fluid bg-light p-5">
@@ -62,6 +66,7 @@ export default function Footer() {
                                       </div>
                                       <button type="submit" className="btn border-dark mx-4 text-uppercase d-inline-block"><Link className='text-decoration-none text-dark'>Subscribe</Link> </button>
                                   </form>
+                                  <Form onSubmit={getData} />
                         </div>
                     </div>
                 </div>
