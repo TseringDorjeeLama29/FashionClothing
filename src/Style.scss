@@ -15,6 +15,26 @@ body {
     font-family: 'Roboto', sans-serif !important;
 }
 
+.active {
+    visibility: visible;
+    top: 0;
+}
+
+.close {
+    visibility: hidden;
+    top: -180px;
+}
+
+.search_header {
+    display: flex;
+    position: fixed;
+    height: 180px;
+    width: 100%;
+    // top: -180px;
+    z-index: 999;
+    // visibility:hidden;
+}
+
 ul {margin-bottom: 0 !important; padding-left: 0 !important;}
 
 .top, .nav-right {
