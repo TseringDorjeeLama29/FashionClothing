@@ -59,13 +59,6 @@ export default function Footer() {
                         <div className="row">
                                 <h5>GET IN TOUCH</h5>
                                 <p>Sign up to receive amazing offers & deals</p>
-                                  <form>
-                                      <div className="mb-3 d-inline-block">
-                                          <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-                                          <input type="email" className="form-control d-inline-block" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Enter Your Email' />
-                                      </div>
-                                      <button type="submit" className="btn border-dark mx-4 text-uppercase d-inline-block"><Link className='text-decoration-none text-dark'>Subscribe</Link> </button>
-                                  </form>
                                   <Form onSubmit={getData} />
                         </div>
                     </div>
