@@ -111,10 +111,6 @@ export default function Navbars({onPress}) {
                         </div>
                         <div className="col-lg-3 nav-right text-end ">
                             <ul>
-<<<<<<< HEAD
-                                <li onClick={onPress}><a href="" ><i class="fas fa-search"></i></a></li>
-=======
->>>>>>> dev-feature
                                 <li><a href=""><i class="fa-solid fa-user"></i></a></li>
                                 <li className='position-relative cart'><a href="" className='cart-1'><i class="fa-solid fa-heart "></i><span>0</span></a></li>
                                 <li className='position-relative cart'><Link to={"/cart"} className='cart-2'><i class="fa-solid fa-cart-shopping"></i><span>{size}</span></Link></li>
