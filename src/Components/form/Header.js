@@ -1,16 +1,10 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
+import Search from '../ui/Search';
 
 export default function Header({isSearchVisible}) {
-    // const [visible, setVisible] = useState(true);
-    
-
-    // const handleVisibility = () => {
-    //     setVisible(prev => !prev);
-    //   };
-    // console.log(isSearchVisible, "hello puja mam")
+    let toggleClassCheck = isSearchVisible ? ' active' : '';
       
-
   return (
     <>
         <div className="top py-2 ">
@@ -34,12 +28,9 @@ export default function Header({isSearchVisible}) {
                 </div>
             </div>
             
-            <aside className={isSearchVisible ? "search_header active" : "search_header "}>
-            <form id='search_button' className="py-5 px-5 bg-white  " role="search">
-                  <input className="form-control me-2 bg-light py-3" type="search" placeholder="Search Product" aria-label="Search" />
-                  <button className="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </aside>
+
+            <Search toggleClassCheck ={toggleClassCheck} />
+
               
               
         </div>

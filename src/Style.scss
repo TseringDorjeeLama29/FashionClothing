@@ -16,8 +16,8 @@ body {
 }
 
 .active {
-    visibility: visible;
-    top: 0;
+    visibility: visible !important;
+    top: -80px !important;
 }
 
 // .close {

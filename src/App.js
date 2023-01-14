@@ -9,7 +9,7 @@ import Footer from './Components/form/Footer';
 export default function App() {
     const [isSearchVisible, setIsSearchVisible] = useState(false)
 
-    const onPress = () => {
+  const onPress = () => {
     console.log("search button pressed")
     setIsSearchVisible(isSearchVisible => !isSearchVisible)
   };
